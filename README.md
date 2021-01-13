@@ -75,8 +75,8 @@ aarch64-linux-gnu-objdump -d hello
 ./hello
 
 # debug it
-qemu-aarch64 -g 1234 ./bin/main
-gdb-multiarch ./bin/main -ex 'target remote :1234'
+qemu-aarch64 -g 12345 ./hello
+gdb-multiarch ./hello -ex 'target remote :12345'
 ```
 
 For help, reach out to: [paolieri@usc.edu](mailto:paolieri@usc.edu)
