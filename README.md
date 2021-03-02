@@ -1,6 +1,6 @@
 # Assembly Dojo (C, x86-64, ARM64)
 
-<img src="https://i.imgur.com/BfEaQQT.png" style="width: 300px;">
+<img src="https://i.imgur.com/BfEaQQT.png" width="300">
 
 ## How to create new practice examples
 
