@@ -2,6 +2,11 @@
 
 <img src="https://i.imgur.com/BfEaQQT.png" width="300">
 
+Created by [paolieri@usc.edu](mailto:paolieri@usc.edu) for the enjoyment of all students of [CS356: Introduction to
+Computer Systems](https://usc-cs356.github.io/).<br>
+To contribute new examples, create a pull request.
+
+
 ## How to create new practice examples
 
 - Write a header file with the prototype of your function, for example
@@ -117,7 +122,3 @@ aarch64-linux-gnu-objdump -d hello
 qemu-aarch64 -g 12345 ./hello
 gdb-multiarch ./hello -ex 'target remote :12345'
 ```
-
-For help, reach out to: [paolieri@usc.edu](mailto:paolieri@usc.edu)
-
-To contribute new examples, create a pull request.
