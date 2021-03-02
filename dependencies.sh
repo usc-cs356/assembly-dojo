@@ -1,4 +1,4 @@
-# use this script to install required dependencies on Debian/amd64
+# use this script to install the required dependencies on Debian/amd64
 
 # NOTE: installing gcc-multilib allows compiling for x86-32 (gcc -m32)
 # NOTE: gcc-multilib conflicts with gcc-aarch64-linux-gnu
