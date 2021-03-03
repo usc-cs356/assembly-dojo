@@ -86,5 +86,67 @@ local_array:
 	.cfi_endproc
 .LFE6:
 	.size	local_array, .-local_array
+	.globl	se28_reg
+	.type	se28_reg, @function
+se28_reg:
+.LFB7:
+	.cfi_startproc
+	movswq	%di, %rax
+	ret
+	.cfi_endproc
+.LFE7:
+	.size	se28_reg, .-se28_reg
+	.globl	ze28_reg
+	.type	ze28_reg, @function
+ze28_reg:
+.LFB8:
+	.cfi_startproc
+	movzwl	%di, %eax
+	ret
+	.cfi_endproc
+.LFE8:
+	.size	ze28_reg, .-ze28_reg
+	.globl	se48_to_mem
+	.type	se48_to_mem, @function
+se48_to_mem:
+.LFB9:
+	.cfi_startproc
+	movslq	%edi, %rdi
+	movq	%rdi, (%rsi)
+	ret
+	.cfi_endproc
+.LFE9:
+	.size	se48_to_mem, .-se48_to_mem
+	.globl	ze48_to_mem
+	.type	ze48_to_mem, @function
+ze48_to_mem:
+.LFB10:
+	.cfi_startproc
+	movl	%edi, %eax
+	movq	%rax, (%rsi)
+	ret
+	.cfi_endproc
+.LFE10:
+	.size	ze48_to_mem, .-ze48_to_mem
+	.globl	se48_from_mem
+	.type	se48_from_mem, @function
+se48_from_mem:
+.LFB11:
+	.cfi_startproc
+	movslq	(%rdi), %rax
+	ret
+	.cfi_endproc
+.LFE11:
+	.size	se48_from_mem, .-se48_from_mem
+	.globl	ze48_from_mem
+	.type	ze48_from_mem, @function
+ze48_from_mem:
+.LFB12:
+	.cfi_startproc
+	movl	(%rdi), %eax
+	ret
+	.cfi_endproc
+.LFE12:
+	.size	ze48_from_mem, .-ze48_from_mem
 	.ident	"GCC: (Debian 10.2.1-6) 10.2.1 20210110"
 	.section	.note.GNU-stack,"",@progbits
